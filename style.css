@@ -1,0 +1,105 @@
+body{
+    background-color: #edefee;
+    font-family: sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+header {
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* background: url(./Mangata-and-Gallo-logos/Asset\ @3x.png); */
+}
+
+nav{
+    background-color: black;
+    border-radius: 1rem;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+ }
+
+
+ section{
+    display: flex;
+    margin: 10px 10px;
+ }
+
+ article{
+    flex: 1;
+    /* border: 1px solid white; */
+    padding: 10px;
+ }
+
+ footer img {
+    width: 25%;
+ }
+
+ footer {
+    margin-top: 20px;
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    justify-content: space-around;
+ }
+
+ footer div {
+    flex: 1;
+    /* justify-content: space-between; */
+    color: white;
+    align-self: center;
+ }
+
+#promotion{
+    background-color: #bca689;
+    border-radius: 1rem;
+    width: 100%;
+    background-image: url('https://cdn.shopify.com/s/files/1/2092/6535/files/Leah-Yard-Designs-Spring-2023_1024x1024.jpg?v=1676998123');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
+.discounted-products{
+    background-color: #faebd7;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.discounted-products img{
+    width: 100%;
+}
