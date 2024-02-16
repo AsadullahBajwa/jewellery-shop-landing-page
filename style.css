@@ -58,9 +58,15 @@ nav li a{
     margin: 10px 10px;
  }
 
+ @media (max-width: 600px) {
+    section {
+        flex-direction: column;
+        margin: 10px 10px;
+    }
+}
+
  article{
     flex: 1;
-    /* border: 1px solid white; */
     padding: 10px;
  }
 
@@ -83,7 +89,7 @@ nav li a{
     align-self: center;
  }
 
-#promotion{
+/* #promotion{
     background-color: #bca689;
     border-radius: 1rem;
     width: 100%;
@@ -92,6 +98,43 @@ nav li a{
     background-size: cover;
     color: white;
 
+} */
+
+#promotion{
+    background-color: #bca689;
+    border-radius: 1rem;
+    width: 100%;
+    background-image: url('https://cdn.shopify.com/s/files/1/2092/6535/files/Leah-Yard-Designs-Spring-2023_1024x1024.jpg?v=1676998123');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: transform 0.2s; /* Animation */
+}
+
+#promotion:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Enlarge the element when hovered */
+}
+
+@keyframes promotion-animation {
+    0% { background-color: #bca689; }
+    50% { background-color: #a689bc; }
+    100% { background-color: #bca689; }
+}
+
+#promotion {
+    animation-name: promotion-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 600px) {
+    #promotion {
+        /* Adjust styles for smaller screens here */
+        width: 90%;
+        font-size: small;
+    }
 }
 
 .discounted-products{
